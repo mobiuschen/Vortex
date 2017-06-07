@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		91BCE0D69CB0E787D2B0B398 /* glew.c in Sources */ = {isa = PBXBuildFile; fileRef = 91BCEF2A0E3A272DE64C76B5 /* glew.c */; };
+		91BCE3BF4D6959A80E6B60CA /* platform_osx.mm in Sources */ = {isa = PBXBuildFile; fileRef = 91BCEC3B0470AEEDA492C5AF /* platform_osx.mm */; };
+		91BCE452EA332EE09745A20F /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91BCEC202FFC168E714FB5C5 /* libglfw3.a */; };
+		91BCE47593E4C6A7BF4D9071 /* fragment.shader in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91BCE1970B2C046A48ADA3CC /* fragment.shader */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		91BCE58D967F56317569D225 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91BCEDF21208899F298F852B /* main.cpp */; };
+		91BCE668BB323D9083EAE1FD /* vertex.shader in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91BCE12020CA5198D3001406 /* vertex.shader */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		91BCE90DD77FB7E38254EC89 /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91BCE2D469D35EA7B54E42F3 /* Shader.cpp */; };
+		B53B8EAE1EE3B14C00FFB91C /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53B8EAD1EE3B14C00FFB91C /* OpenGL.framework */; };
+		B53B8EB01EE3B16400FFB91C /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53B8EAF1EE3B16400FFB91C /* IOKit.framework */; };
+		B53B8EB21EE3B16E00FFB91C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53B8EB11EE3B16E00FFB91C /* Cocoa.framework */; };
+		B53B8EB41EE3B17600FFB91C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53B8EB31EE3B17600FFB91C /* QuartzCore.framework */; };
+		B53B8EE81EE3C7DD00FFB91C /* glew.c in Sources */ = {isa = PBXBuildFile; fileRef = 91BCEF2A0E3A272DE64C76B5 /* glew.c */; };
+		B53B8EE91EE3C7E800FFB91C /* platform_osx.mm in Sources */ = {isa = PBXBuildFile; fileRef = 91BCEC3B0470AEEDA492C5AF /* platform_osx.mm */; };
+		B53B8EEA1EE3C7F900FFB91C /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91BCEC202FFC168E714FB5C5 /* libglfw3.a */; };
+		B53B8EEB1EE3C7F900FFB91C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53B8EB31EE3B17600FFB91C /* QuartzCore.framework */; };
+		B53B8EEC1EE3C7F900FFB91C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53B8EB11EE3B16E00FFB91C /* Cocoa.framework */; };
+		B53B8EED1EE3C7F900FFB91C /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53B8EAF1EE3B16400FFB91C /* IOKit.framework */; };
+		B53B8EEE1EE3C7F900FFB91C /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53B8EAD1EE3B14C00FFB91C /* OpenGL.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		91BCE94EE15492189D1CA995 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				91BCE47593E4C6A7BF4D9071 /* fragment.shader in CopyFiles */,
+				91BCE668BB323D9083EAE1FD /* vertex.shader in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		91BCE12020CA5198D3001406 /* vertex.shader */ = {isa = PBXFileReference; lastKnownFileType = file.shader; path = vertex.shader; sourceTree = "<group>"; };
+		91BCE1970B2C046A48ADA3CC /* fragment.shader */ = {isa = PBXFileReference; lastKnownFileType = file.shader; path = fragment.shader; sourceTree = "<group>"; };
+		91BCE2D469D35EA7B54E42F3 /* Shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Shader.cpp; sourceTree = "<group>"; };
+		91BCE382282AC4C2F8312F55 /* RenderVotex */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RenderVotex; sourceTree = BUILT_PRODUCTS_DIR; };
+		91BCE937BF28DEC9BD8B408A /* platform.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = platform.hpp; path = common/platform.hpp; sourceTree = "<group>"; };
+		91BCEC202FFC168E714FB5C5 /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = platforms/osx/libglfw3.a; sourceTree = "<group>"; };
+		91BCEC3B0470AEEDA492C5AF /* platform_osx.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = platform_osx.mm; path = platforms/osx/platform_osx.mm; sourceTree = "<group>"; };
+		91BCEDF21208899F298F852B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		91BCEF2A0E3A272DE64C76B5 /* glew.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glew.c; path = common/thirdparty/glew/src/glew.c; sourceTree = "<group>"; };
+		91BCEF7B3FB4973DF570555C /* Shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader.h; sourceTree = "<group>"; };
+		B53B8EAD1EE3B14C00FFB91C /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		B53B8EAF1EE3B16400FFB91C /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		B53B8EB11EE3B16E00FFB91C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B53B8EB31EE3B17600FFB91C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B53B8ED71EE3C77900FFB91C /* RenderVotex2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RenderVotex2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		91BCE6CB46B2F9FE0C19A3DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B53B8EB41EE3B17600FFB91C /* QuartzCore.framework in Frameworks */,
+				91BCE452EA332EE09745A20F /* libglfw3.a in Frameworks */,
+				B53B8EB01EE3B16400FFB91C /* IOKit.framework in Frameworks */,
+				B53B8EAE1EE3B14C00FFB91C /* OpenGL.framework in Frameworks */,
+				B53B8EB21EE3B16E00FFB91C /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B53B8ED41EE3C77900FFB91C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B53B8EEB1EE3C7F900FFB91C /* QuartzCore.framework in Frameworks */,
+				B53B8EEA1EE3C7F900FFB91C /* libglfw3.a in Frameworks */,
+				B53B8EEC1EE3C7F900FFB91C /* Cocoa.framework in Frameworks */,
+				B53B8EED1EE3C7F900FFB91C /* IOKit.framework in Frameworks */,
+				B53B8EEE1EE3C7F900FFB91C /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		91BCE0464626A07FABC0DBB6 /* RenderVotex */ = {
+			isa = PBXGroup;
+			children = (
+				91BCEDF21208899F298F852B /* main.cpp */,
+				91BCE12020CA5198D3001406 /* vertex.shader */,
+				91BCE1970B2C046A48ADA3CC /* fragment.shader */,
+				91BCE2D469D35EA7B54E42F3 /* Shader.cpp */,
+				91BCEF7B3FB4973DF570555C /* Shader.h */,
+			);
+			path = RenderVotex;
+			sourceTree = "<group>";
+		};
+		91BCE731EECE15C2AD75A025 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				91BCE937BF28DEC9BD8B408A /* platform.hpp */,
+				91BCEC202FFC168E714FB5C5 /* libglfw3.a */,
+				91BCEF2A0E3A272DE64C76B5 /* glew.c */,
+				91BCEC3B0470AEEDA492C5AF /* platform_osx.mm */,
+				B53B8EB31EE3B17600FFB91C /* QuartzCore.framework */,
+				B53B8EB11EE3B16E00FFB91C /* Cocoa.framework */,
+				B53B8EAF1EE3B16400FFB91C /* IOKit.framework */,
+				B53B8EAD1EE3B14C00FFB91C /* OpenGL.framework */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
+		91BCE77CDD0B38E84DD755CF = {
+			isa = PBXGroup;
+			children = (
+				91BCE0464626A07FABC0DBB6 /* RenderVotex */,
+				91BCE731EECE15C2AD75A025 /* common */,
+				B53B8EAC1EE3B14C00FFB91C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		91BCE78B0861DEA327093F6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				91BCE382282AC4C2F8312F55 /* RenderVotex */,
+				B53B8ED71EE3C77900FFB91C /* RenderVotex2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B53B8EAC1EE3B14C00FFB91C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91BCE78B0861DEA327093F6E /* Products */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		91BCE60F4DE85609AC3D27D1 /* RenderVotex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91BCEC75AA93C1C26CF07672 /* Build configuration list for PBXNativeTarget "RenderVotex" */;
+			buildPhases = (
+				91BCED0F932800DA3C12AAD7 /* Sources */,
+				91BCE6CB46B2F9FE0C19A3DA /* Frameworks */,
+				91BCE94EE15492189D1CA995 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RenderVotex;
+			productName = RenderVotex;
+			productReference = 91BCE382282AC4C2F8312F55 /* RenderVotex */;
+			productType = "com.apple.product-type.tool";
+		};
+		B53B8ED61EE3C77900FFB91C /* RenderVotex2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B53B8EE31EE3C77900FFB91C /* Build configuration list for PBXNativeTarget "RenderVotex2" */;
+			buildPhases = (
+				B53B8ED31EE3C77900FFB91C /* Sources */,
+				B53B8ED41EE3C77900FFB91C /* Frameworks */,
+				B53B8ED51EE3C77900FFB91C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RenderVotex2;
+			productName = RenderVotex2;
+			productReference = B53B8ED71EE3C77900FFB91C /* RenderVotex2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		91BCE811611E27F83B146395 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				ORGANIZATIONNAME = "___FULLUSERNAME___";
+				TargetAttributes = {
+					B53B8ED61EE3C77900FFB91C = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 91BCE385AF013B886562927D /* Build configuration list for PBXProject "RenderVotex" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 91BCE77CDD0B38E84DD755CF;
+			productRefGroup = 91BCE78B0861DEA327093F6E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				91BCE60F4DE85609AC3D27D1 /* RenderVotex */,
+				B53B8ED61EE3C77900FFB91C /* RenderVotex2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B53B8ED51EE3C77900FFB91C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		91BCED0F932800DA3C12AAD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91BCE0D69CB0E787D2B0B398 /* glew.c in Sources */,
+				91BCE58D967F56317569D225 /* main.cpp in Sources */,
+				91BCE3BF4D6959A80E6B60CA /* platform_osx.mm in Sources */,
+				91BCE90DD77FB7E38254EC89 /* Shader.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B53B8ED31EE3C77900FFB91C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B53B8EE91EE3C7E800FFB91C /* platform_osx.mm in Sources */,
+				B53B8EE81EE3C7DD00FFB91C /* glew.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		91BCE05033D85053FB9B764F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = GLM_FORCE_RADIANS;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "";
+			};
+			name = Debug;
+		};
+		91BCE0C2A61BDC075371C1BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = GLM_FORCE_RADIANS;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = "";
+			};
+			name = Release;
+		};
+		91BCE6A729189F7DF05ED918 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/common/thirdparty\"/**";
+				LIBRARY_SEARCH_PATHS = (
+					"\"${PROJECT_DIR}/platforms/osx\"/**",
+					"$(PROJECT_DIR)/platforms/osx",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		91BCED503C050957339D8235 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/common/thirdparty\"/**";
+				LIBRARY_SEARCH_PATHS = (
+					"\"${PROJECT_DIR}/platforms/osx\"/**",
+					"$(PROJECT_DIR)/platforms/osx",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B53B8EE41EE3C77900FFB91C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/common/thirdparty\"/**";
+				INFOPLIST_FILE = "";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/platforms/osx",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = im.mobius.RenderVotex2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = "";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B53B8EE51EE3C77900FFB91C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/common/thirdparty\"/**";
+				INFOPLIST_FILE = "";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/platforms/osx",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = im.mobius.RenderVotex2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		91BCE385AF013B886562927D /* Build configuration list for PBXProject "RenderVotex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91BCE05033D85053FB9B764F /* Debug */,
+				91BCE0C2A61BDC075371C1BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91BCEC75AA93C1C26CF07672 /* Build configuration list for PBXNativeTarget "RenderVotex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91BCED503C050957339D8235 /* Debug */,
+				91BCE6A729189F7DF05ED918 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B53B8EE31EE3C77900FFB91C /* Build configuration list for PBXNativeTarget "RenderVotex2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B53B8EE41EE3C77900FFB91C /* Debug */,
+				B53B8EE51EE3C77900FFB91C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 91BCE811611E27F83B146395 /* Project object */;
+}
