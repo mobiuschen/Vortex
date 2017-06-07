@@ -45,8 +45,8 @@
 		91BCE12020CA5198D3001406 /* vertex.shader */ = {isa = PBXFileReference; lastKnownFileType = file.shader; path = vertex.shader; sourceTree = "<group>"; };
 		91BCE1970B2C046A48ADA3CC /* fragment.shader */ = {isa = PBXFileReference; lastKnownFileType = file.shader; path = fragment.shader; sourceTree = "<group>"; };
 		91BCE2D469D35EA7B54E42F3 /* Shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Shader.cpp; sourceTree = "<group>"; };
-		91BCE382282AC4C2F8312F55 /* RenderVotex */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RenderVotex; sourceTree = BUILT_PRODUCTS_DIR; };
 		91BCE937BF28DEC9BD8B408A /* platform.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = platform.hpp; path = common/platform.hpp; sourceTree = "<group>"; };
+		91BCEA36CCA065581E93AB48 /* RenderVotex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = RenderVotex; path = "../../Library/Caches/AppCode2017.1/DerivedData/RenderVotex-dftfhxhdtxbrjmeewzuzpdshdruu/Build/Products/Debug/RenderVotex"; sourceTree = "<group>"; };
 		91BCEC202FFC168E714FB5C5 /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = platforms/osx/libglfw3.a; sourceTree = "<group>"; };
 		91BCEC3B0470AEEDA492C5AF /* platform_osx.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = platform_osx.mm; path = platforms/osx/platform_osx.mm; sourceTree = "<group>"; };
 		91BCEDF21208899F298F852B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -56,7 +56,6 @@
 		B53B8EAF1EE3B16400FFB91C /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		B53B8EB11EE3B16E00FFB91C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		B53B8EB31EE3B17600FFB91C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		B53B8ED71EE3C77900FFB91C /* RenderVotex2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RenderVotex2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,25 +118,16 @@
 			children = (
 				91BCE0464626A07FABC0DBB6 /* RenderVotex */,
 				91BCE731EECE15C2AD75A025 /* common */,
-				B53B8EAC1EE3B14C00FFB91C /* Frameworks */,
+				91BCEFE17313B92A284966C5 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		91BCE78B0861DEA327093F6E /* Products */ = {
+		91BCEFE17313B92A284966C5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				91BCE382282AC4C2F8312F55 /* RenderVotex */,
-				B53B8ED71EE3C77900FFB91C /* RenderVotex2.app */,
+				91BCEA36CCA065581E93AB48 /* RenderVotex */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		B53B8EAC1EE3B14C00FFB91C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				91BCE78B0861DEA327093F6E /* Products */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,7 +147,6 @@
 			);
 			name = RenderVotex;
 			productName = RenderVotex;
-			productReference = 91BCE382282AC4C2F8312F55 /* RenderVotex */;
 			productType = "com.apple.product-type.tool";
 		};
 		B53B8ED61EE3C77900FFB91C /* RenderVotex2 */ = {
@@ -174,7 +163,6 @@
 			);
 			name = RenderVotex2;
 			productName = RenderVotex2;
-			productReference = B53B8ED71EE3C77900FFB91C /* RenderVotex2.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -201,7 +189,6 @@
 				Base,
 			);
 			mainGroup = 91BCE77CDD0B38E84DD755CF;
-			productRefGroup = 91BCE78B0861DEA327093F6E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (

@@ -94,9 +94,10 @@ bool Render(double currentTime)
 {
     const GLfloat color[] = {0.5f, 0.0f, 0.0f, 1.0f};
     glClearBufferfv(GL_COLOR, 0, color);
+    
     glUseProgram(program);
-    glPointSize(40.0f);
-    glDrawArrays(GL_POINTS, 0, 1);
+    
+    glDrawArrays(GL_TRIANGLES, 0, 3);
     return true;
 }
 
