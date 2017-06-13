@@ -92,11 +92,23 @@ Exit0:
 
 bool Render(double currentTime)
 {
-    const GLfloat color[] = {0.5f, 0.0f, 0.0f, 1.0f};
-    glClearBufferfv(GL_COLOR, 0, color);
-    
+    const GLfloat bgColor[] = {0.5f, 0.0f, 0.0f, 1.0f};
+    glClearBufferfv(GL_COLOR, 0, bgColor);
     glUseProgram(program);
-    
+
+    const float offset[4] = {
+            (float) sin(currentTime) * 0.5f,
+            (float) cos(currentTime) * 0.6f,
+            0.0f, 0.0f};
+    const float vsColor[] = {
+            0.0f,
+            (float) sin(currentTime) * 0.5f,
+            (float) cos(currentTime) * 0.5f,
+            0.0f
+    };
+
+    glVertexAttrib4fv(0, offset);
+    glVertexAttrib4fv(1, vsColor);
     glDrawArrays(GL_TRIANGLES, 0, 3);
     return true;
 }
