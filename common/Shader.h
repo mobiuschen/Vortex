@@ -3,9 +3,7 @@
 // Copyright (c) 2017 ___FULLUSERNAME___. All rights reserved.
 //
 
-#ifndef RENDERVOTEX_SHADER_H
-#define RENDERVOTEX_SHADER_H
-
+#pragma once
 
 #include <string>
 #include <OpenGL/OpenGL.h>
@@ -26,5 +24,3 @@ private:
     GLuint m_object;
 };
 
-
-#endif //RENDERVOTEX_SHADER_H

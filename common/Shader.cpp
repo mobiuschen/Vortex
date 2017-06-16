@@ -17,7 +17,7 @@ Shader *Shader::ShaderFromFile(const std::string &filePath, GLenum shaderType)
     std::ifstream ifstream;
     std::stringstream buffer;
     bool retCode = false;
-
+                                                 
     ifstream.open(filePath, std::ios::in | std::ios::binary);
     retCode = ifstream.is_open();
     assert(retCode);
