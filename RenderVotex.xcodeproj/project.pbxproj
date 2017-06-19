@@ -8,29 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		91BCE0D69CB0E787D2B0B398 /* glew.c in Sources */ = {isa = PBXBuildFile; fileRef = 91BCEF2A0E3A272DE64C76B5 /* glew.c */; };
+		91BCE1D380123C58C652DB6B /* DrawTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91BCE4CE08E01817A3B6F894 /* DrawTriangle.cpp */; };
+		91BCE3585C973EBF238B6129 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91BCE7AF1561D4A3FA6D17C7 /* Application.cpp */; };
 		91BCE3BF4D6959A80E6B60CA /* platform_osx.mm in Sources */ = {isa = PBXBuildFile; fileRef = 91BCEC3B0470AEEDA492C5AF /* platform_osx.mm */; };
-		91BCE40D4A9A9CFBE73F1D81 /* simple_fragment.shader in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91BCEA1CAF5DE93654D3C420 /* simple_fragment.shader */; };
+		91BCE426384408B1754C3376 /* Program.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91BCE16D36C6D15B0746C76F /* Program.cpp */; };
 		91BCE452EA332EE09745A20F /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91BCEC202FFC168E714FB5C5 /* libglfw3.a */; };
-		91BCE47593E4C6A7BF4D9071 /* fragment.shader in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91BCE1970B2C046A48ADA3CC /* fragment.shader */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		91BCE58D967F56317569D225 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91BCEDF21208899F298F852B /* main.cpp */; };
-		91BCE668BB323D9083EAE1FD /* vertex.shader in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91BCE12020CA5198D3001406 /* vertex.shader */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		91BCE8CBC3F3677F979B9C66 /* tessEvaluation.shader in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91BCECC04F5073D6E94C8A4A /* tessEvaluation.shader */; };
-		91BCEA8842BCB454D9BC5BB3 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91BCE7AF1561D4A3FA6D17C7 /* Application.cpp */; };
-		91BCEABFD16862DC546A5A09 /* DrawTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91BCE88B599881F17319DEFC /* DrawTriangle.cpp */; };
-		91BCEBA7712974E401031A86 /* tessControl.shader in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91BCEAD9A527430B4D873DD3 /* tessControl.shader */; };
-		91BCEC97170CF7AF4AA6F5C9 /* triangle_vertex.shader in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91BCE9EE1CF5CE6FE69E144E /* triangle_vertex.shader */; };
-		91BCEF21493CF5C231C00227 /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91BCE5D103839721C54F8779 /* Shader.cpp */; };
+		91BCE69040323FBAAAC27301 /* simple_fragment.shader in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91BCE7EC7080B6519AEA6455 /* simple_fragment.shader */; };
+		91BCEC625FF07D6D206AA50A /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91BCE5D103839721C54F8779 /* Shader.cpp */; };
+		91BCECD1A717EE1939CE533F /* triangle_vertex.shader in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91BCE242A66AF8945B6B9BA5 /* triangle_vertex.shader */; };
 		B53B8EAE1EE3B14C00FFB91C /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53B8EAD1EE3B14C00FFB91C /* OpenGL.framework */; };
 		B53B8EB01EE3B16400FFB91C /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53B8EAF1EE3B16400FFB91C /* IOKit.framework */; };
 		B53B8EB21EE3B16E00FFB91C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53B8EB11EE3B16E00FFB91C /* Cocoa.framework */; };
 		B53B8EB41EE3B17600FFB91C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53B8EB31EE3B17600FFB91C /* QuartzCore.framework */; };
-		B53B8EE81EE3C7DD00FFB91C /* glew.c in Sources */ = {isa = PBXBuildFile; fileRef = 91BCEF2A0E3A272DE64C76B5 /* glew.c */; };
-		B53B8EE91EE3C7E800FFB91C /* platform_osx.mm in Sources */ = {isa = PBXBuildFile; fileRef = 91BCEC3B0470AEEDA492C5AF /* platform_osx.mm */; };
-		B53B8EEA1EE3C7F900FFB91C /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91BCEC202FFC168E714FB5C5 /* libglfw3.a */; };
-		B53B8EEB1EE3C7F900FFB91C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53B8EB31EE3B17600FFB91C /* QuartzCore.framework */; };
-		B53B8EEC1EE3C7F900FFB91C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53B8EB11EE3B16E00FFB91C /* Cocoa.framework */; };
-		B53B8EED1EE3C7F900FFB91C /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53B8EAF1EE3B16400FFB91C /* IOKit.framework */; };
-		B53B8EEE1EE3C7F900FFB91C /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53B8EAD1EE3B14C00FFB91C /* OpenGL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,12 +30,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
-				91BCE47593E4C6A7BF4D9071 /* fragment.shader in CopyFiles */,
-				91BCE668BB323D9083EAE1FD /* vertex.shader in CopyFiles */,
-				91BCEBA7712974E401031A86 /* tessControl.shader in CopyFiles */,
-				91BCE8CBC3F3677F979B9C66 /* tessEvaluation.shader in CopyFiles */,
-				91BCE40D4A9A9CFBE73F1D81 /* simple_fragment.shader in CopyFiles */,
-				91BCEC97170CF7AF4AA6F5C9 /* triangle_vertex.shader in CopyFiles */,
+				91BCE69040323FBAAAC27301 /* simple_fragment.shader in CopyFiles */,
+				91BCECD1A717EE1939CE533F /* triangle_vertex.shader in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,22 +40,27 @@
 /* Begin PBXFileReference section */
 		91BCE061E7E4F72732D87082 /* Shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Shader.h; path = common/Shader.h; sourceTree = "<group>"; };
 		91BCE12020CA5198D3001406 /* vertex.shader */ = {isa = PBXFileReference; lastKnownFileType = file.shader; path = vertex.shader; sourceTree = "<group>"; };
+		91BCE16D36C6D15B0746C76F /* Program.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Program.cpp; path = common/Program.cpp; sourceTree = "<group>"; };
 		91BCE1970B2C046A48ADA3CC /* fragment.shader */ = {isa = PBXFileReference; lastKnownFileType = file.shader; path = fragment.shader; sourceTree = "<group>"; };
-		91BCE1A8B752A3A4225F4280 /* DrawTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawTriangle.h; sourceTree = "<group>"; };
+		91BCE242A66AF8945B6B9BA5 /* triangle_vertex.shader */ = {isa = PBXFileReference; lastKnownFileType = file.shader; path = triangle_vertex.shader; sourceTree = "<group>"; };
+		91BCE35B08E94BCF18DB8F6A /* TessellationTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TessellationTriangle.h; sourceTree = "<group>"; };
 		91BCE4AEEF9451AB7097C084 /* Application.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Application.h; path = common/Application.h; sourceTree = "<group>"; };
+		91BCE4CE08E01817A3B6F894 /* DrawTriangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DrawTriangle.cpp; sourceTree = "<group>"; };
 		91BCE5D103839721C54F8779 /* Shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Shader.cpp; path = common/Shader.cpp; sourceTree = "<group>"; };
+		91BCE6A2057F28CC7C6370A7 /* TessellationTriangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TessellationTriangle.cpp; sourceTree = "<group>"; };
 		91BCE7AF1561D4A3FA6D17C7 /* Application.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Application.cpp; path = common/Application.cpp; sourceTree = "<group>"; };
-		91BCE88B599881F17319DEFC /* DrawTriangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DrawTriangle.cpp; sourceTree = "<group>"; };
+		91BCE7EC7080B6519AEA6455 /* simple_fragment.shader */ = {isa = PBXFileReference; lastKnownFileType = file.shader; path = simple_fragment.shader; sourceTree = "<group>"; };
 		91BCE95D1F1EACC6E7E65A98 /* platform.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = platform.hpp; path = common/platform.hpp; sourceTree = "<group>"; };
-		91BCE9EE1CF5CE6FE69E144E /* triangle_vertex.shader */ = {isa = PBXFileReference; lastKnownFileType = file.shader; path = triangle_vertex.shader; sourceTree = "<group>"; };
-		91BCEA1CAF5DE93654D3C420 /* simple_fragment.shader */ = {isa = PBXFileReference; lastKnownFileType = file.shader; path = simple_fragment.shader; sourceTree = "<group>"; };
+		91BCEA2EF817F0D25E9CC187 /* DrawTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawTriangle.h; sourceTree = "<group>"; };
 		91BCEA36CCA065581E93AB48 /* RenderVotex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = RenderVotex; path = "../../Library/Caches/AppCode2017.1/DerivedData/RenderVotex-dftfhxhdtxbrjmeewzuzpdshdruu/Build/Products/Debug/RenderVotex"; sourceTree = "<group>"; };
-		91BCEAD9A527430B4D873DD3 /* tessControl.shader */ = {isa = PBXFileReference; lastKnownFileType = file.shader; path = tessControl.shader; sourceTree = "<group>"; };
+		91BCEB37425245FF865CE869 /* tessControl.shader */ = {isa = PBXFileReference; lastKnownFileType = file.shader; path = tessControl.shader; sourceTree = "<group>"; };
 		91BCEC202FFC168E714FB5C5 /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = platforms/osx/libglfw3.a; sourceTree = "<group>"; };
 		91BCEC3B0470AEEDA492C5AF /* platform_osx.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = platform_osx.mm; path = platforms/osx/platform_osx.mm; sourceTree = "<group>"; };
-		91BCECC04F5073D6E94C8A4A /* tessEvaluation.shader */ = {isa = PBXFileReference; lastKnownFileType = file.shader; path = tessEvaluation.shader; sourceTree = "<group>"; };
+		91BCEC651DB41B8EB1838043 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utility.h; path = common/Utility.h; sourceTree = "<group>"; };
 		91BCEDF21208899F298F852B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		91BCEF2A0E3A272DE64C76B5 /* glew.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glew.c; path = common/thirdparty/glew/src/glew.c; sourceTree = "<group>"; };
+		91BCEF3A23811640E072A793 /* Program.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Program.h; path = common/Program.h; sourceTree = "<group>"; };
+		91BCEFDF907B8C983AF7997B /* tessEvaluation.shader */ = {isa = PBXFileReference; lastKnownFileType = file.shader; path = tessEvaluation.shader; sourceTree = "<group>"; };
 		B53B8EAD1EE3B14C00FFB91C /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		B53B8EAF1EE3B16400FFB91C /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		B53B8EB11EE3B16E00FFB91C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -89,18 +80,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B53B8ED41EE3C77900FFB91C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B53B8EEB1EE3C7F900FFB91C /* QuartzCore.framework in Frameworks */,
-				B53B8EEA1EE3C7F900FFB91C /* libglfw3.a in Frameworks */,
-				B53B8EEC1EE3C7F900FFB91C /* Cocoa.framework in Frameworks */,
-				B53B8EED1EE3C7F900FFB91C /* IOKit.framework in Frameworks */,
-				B53B8EEE1EE3C7F900FFB91C /* OpenGL.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -110,8 +89,6 @@
 				91BCEDF21208899F298F852B /* main.cpp */,
 				91BCE12020CA5198D3001406 /* vertex.shader */,
 				91BCE1970B2C046A48ADA3CC /* fragment.shader */,
-				91BCEAD9A527430B4D873DD3 /* tessControl.shader */,
-				91BCECC04F5073D6E94C8A4A /* tessEvaluation.shader */,
 			);
 			path = RenderVotex;
 			sourceTree = "<group>";
@@ -131,6 +108,9 @@
 				91BCE061E7E4F72732D87082 /* Shader.h */,
 				91BCE5D103839721C54F8779 /* Shader.cpp */,
 				91BCE95D1F1EACC6E7E65A98 /* platform.hpp */,
+				91BCE16D36C6D15B0746C76F /* Program.cpp */,
+				91BCEF3A23811640E072A793 /* Program.h */,
+				91BCEC651DB41B8EB1838043 /* Utility.h */,
 			);
 			name = common;
 			sourceTree = "<group>";
@@ -148,12 +128,32 @@
 		91BCE9871D81F34ACE08E726 /* OpenGLSuperBible */ = {
 			isa = PBXGroup;
 			children = (
-				91BCE1A8B752A3A4225F4280 /* DrawTriangle.h */,
-				91BCE88B599881F17319DEFC /* DrawTriangle.cpp */,
-				91BCE9EE1CF5CE6FE69E144E /* triangle_vertex.shader */,
-				91BCEA1CAF5DE93654D3C420 /* simple_fragment.shader */,
+				91BCEED31CF278C4B413820E /* CH3 */,
+				91BCEED674B8C70AC76A1300 /* CH2 */,
 			);
 			path = OpenGLSuperBible;
+			sourceTree = "<group>";
+		};
+		91BCEED31CF278C4B413820E /* CH3 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CH3;
+			sourceTree = "<group>";
+		};
+		91BCEED674B8C70AC76A1300 /* CH2 */ = {
+			isa = PBXGroup;
+			children = (
+				91BCE242A66AF8945B6B9BA5 /* triangle_vertex.shader */,
+				91BCE4CE08E01817A3B6F894 /* DrawTriangle.cpp */,
+				91BCEA2EF817F0D25E9CC187 /* DrawTriangle.h */,
+				91BCE7EC7080B6519AEA6455 /* simple_fragment.shader */,
+				91BCEFDF907B8C983AF7997B /* tessEvaluation.shader */,
+				91BCEB37425245FF865CE869 /* tessControl.shader */,
+				91BCE6A2057F28CC7C6370A7 /* TessellationTriangle.cpp */,
+				91BCE35B08E94BCF18DB8F6A /* TessellationTriangle.h */,
+			);
+			path = CH2;
 			sourceTree = "<group>";
 		};
 		91BCEFE17313B92A284966C5 /* Products */ = {
@@ -183,22 +183,6 @@
 			productName = RenderVotex;
 			productType = "com.apple.product-type.tool";
 		};
-		B53B8ED61EE3C77900FFB91C /* RenderVotex2 */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B53B8EE31EE3C77900FFB91C /* Build configuration list for PBXNativeTarget "RenderVotex2" */;
-			buildPhases = (
-				B53B8ED31EE3C77900FFB91C /* Sources */,
-				B53B8ED41EE3C77900FFB91C /* Frameworks */,
-				B53B8ED51EE3C77900FFB91C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = RenderVotex2;
-			productName = RenderVotex2;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -207,12 +191,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				ORGANIZATIONNAME = "___FULLUSERNAME___";
-				TargetAttributes = {
-					B53B8ED61EE3C77900FFB91C = {
-						CreatedOnToolsVersion = 8.3.2;
-						ProvisioningStyle = Automatic;
-					};
-				};
 			};
 			buildConfigurationList = 91BCE385AF013B886562927D /* Build configuration list for PBXProject "RenderVotex" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -227,20 +205,9 @@
 			projectRoot = "";
 			targets = (
 				91BCE60F4DE85609AC3D27D1 /* RenderVotex */,
-				B53B8ED61EE3C77900FFB91C /* RenderVotex2 */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		B53B8ED51EE3C77900FFB91C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		91BCED0F932800DA3C12AAD7 /* Sources */ = {
@@ -250,18 +217,10 @@
 				91BCE0D69CB0E787D2B0B398 /* glew.c in Sources */,
 				91BCE58D967F56317569D225 /* main.cpp in Sources */,
 				91BCE3BF4D6959A80E6B60CA /* platform_osx.mm in Sources */,
-				91BCEA8842BCB454D9BC5BB3 /* Application.cpp in Sources */,
-				91BCEF21493CF5C231C00227 /* Shader.cpp in Sources */,
-				91BCEABFD16862DC546A5A09 /* DrawTriangle.cpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B53B8ED31EE3C77900FFB91C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B53B8EE91EE3C7E800FFB91C /* platform_osx.mm in Sources */,
-				B53B8EE81EE3C7DD00FFB91C /* glew.c in Sources */,
+				91BCEC625FF07D6D206AA50A /* Shader.cpp in Sources */,
+				91BCE426384408B1754C3376 /* Program.cpp in Sources */,
+				91BCE3585C973EBF238B6129 /* Application.cpp in Sources */,
+				91BCE1D380123C58C652DB6B /* DrawTriangle.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,51 +340,6 @@
 			};
 			name = Debug;
 		};
-		B53B8EE41EE3C77900FFB91C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/common/thirdparty\"/**";
-				INFOPLIST_FILE = "";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/platforms/osx",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_BUNDLE_IDENTIFIER = im.mobius.RenderVotex2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = "";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		B53B8EE51EE3C77900FFB91C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/common/thirdparty\"/**";
-				INFOPLIST_FILE = "";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/platforms/osx",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_BUNDLE_IDENTIFIER = im.mobius.RenderVotex2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = "";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -443,15 +357,6 @@
 			buildConfigurations = (
 				91BCED503C050957339D8235 /* Debug */,
 				91BCE6A729189F7DF05ED918 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B53B8EE31EE3C77900FFB91C /* Build configuration list for PBXNativeTarget "RenderVotex2" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B53B8EE41EE3C77900FFB91C /* Debug */,
-				B53B8EE51EE3C77900FFB91C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

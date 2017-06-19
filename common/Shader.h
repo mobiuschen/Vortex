@@ -5,8 +5,8 @@
 
 #pragma once
 
+#include <GL/glew.h>
 #include <string>
-#include <OpenGL/OpenGL.h>
 
 class Shader
 {

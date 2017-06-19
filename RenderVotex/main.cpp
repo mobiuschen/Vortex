@@ -6,35 +6,31 @@
 //  Copyright (c) 2017 mobiuschen. All rights reserved.
 //
 
-#include "platform.hpp"
-
 // third-party libraries
-#include <glm/glm.hpp>
 
 // standard C++ libraries
+
+#include "platform.hpp"
+#include "DrawTriangle.h"
+#include <glm/glm.hpp>
 #include <iostream>
 
 
-#include "Application.h"
-#include "DrawTriangle.h"
-
-
-int main(int argc, const char *argv[])
-{
-    int result = EXIT_FAILURE;
+int main(int argc, const char *argv[]) {
+    int result = false;
     bool retCode = false;
 
+    std::cout << "Hello world" << std::endl;
     DrawTriangle app;
-    app.Init();
-    retCode = app.Startup();
+
+    retCode = app.Init();
     if (!retCode)
         goto Exit0;
-
 
     app.Run();
 
 
-    result = EXIT_SUCCESS;
+    result = true;
 Exit0:
     return result;
 

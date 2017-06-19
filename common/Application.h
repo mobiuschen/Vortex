@@ -5,7 +5,12 @@
 
 #pragma once
 
+#include <GL/glew.h>
+#include <vector>
+
 class GLFWwindow;
+class Program;
+
 
 class Application
 {
@@ -26,6 +31,8 @@ protected:
 
     virtual bool Shutdown();
 
+    virtual bool CreateProgram(const std::vector<std::string> shaderSources, const std::vector<GLenum> shaderTypes);
+
 private:
     bool _InitGlew();
 
@@ -35,9 +42,10 @@ private:
 
     void _OnGLFWError(int errCode, const char *msg);
 
-private:
+protected:
+    Program* m_program;
     GLFWwindow *m_window;
 
-    bool        m_closeFlag;
+    bool m_closeFlag;
 };
 

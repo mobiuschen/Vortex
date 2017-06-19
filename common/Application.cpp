@@ -3,37 +3,32 @@
 // Copyright (c) 2017 ___FULLUSERNAME___. All rights reserved.
 //
 
-#include <stdexcept>
-#include <iostream>
+#include "Application.h"
 
-#include <GL/glew.h>
+#include <iostream>
 #include <GLFW/glfw3.h>
 #include <glm/glm.hpp>
 
-
-#include "Application.h"
-
+#include "Program.h"
+#include "Utility.h"
 
 Application::Application() :
+        m_program(nullptr),
         m_window(nullptr),
-        m_closeFlag(false)
-{
+        m_closeFlag(false) {
 }
 
 
-Application::~Application()
-{
+Application::~Application() {
 }
 
 //----------------------------------------------------------------------------------------------------------------------
 
-bool Application::Init()
-{
+bool Application::Init() {
     bool result = false;
     bool retCode = false;
 
-    try
-    {
+    try {
         _InitGlfw();
         _InitGlew();
         _PrintInfo();
@@ -42,19 +37,17 @@ bool Application::Init()
             throw std::runtime_error("OpenGL API 3.2 is not available.");
 
         retCode = Startup();
-        assert(retCode);
+        PROCESS_ERROR(retCode);
 
-        while (!glfwWindowShouldClose(m_window))
-        {
+        while (!glfwWindowShouldClose(m_window)) {
             glfwPollEvents();
             retCode = Render(0);
-            assert(retCode);
+            PROCESS_ERROR(retCode);
             glfwSwapBuffers(m_window);
         }
 
         glfwTerminate();
-    } catch (const std::exception &e)
-    {
+    } catch (const std::exception &e) {
         std::cerr << "ERROR: " << e.what() << std::endl;
         goto Exit0;
     }
@@ -65,8 +58,7 @@ Exit0:
 }
 
 
-bool Application::Run()
-{
+bool Application::Run() {
     bool result = false;
     bool retCode = false;
 
@@ -74,8 +66,7 @@ bool Application::Run()
     if (!retCode)
         goto Exit0;
 
-    while (!m_closeFlag)
-    {
+    while (!m_closeFlag) {
         Render(glfwGetTime());
     }
 
@@ -85,33 +76,47 @@ Exit0:
 }
 
 
-
-bool Application::Shutdown()
-{
+bool Application::Shutdown() {
     m_closeFlag = true;
     return true;
 }
 
 //----------------------------------------------------------------------------------------------------------------------
-bool Application::Startup()
-{
+bool Application::Startup() {
     return true;
 }
 
 
-bool Application::Render(double currentTime)
-{
+bool Application::Render(double currentTime) {
     return true;
 }
 
 
 //----------------------------------------------------------------------------------------------------------------------
-bool Application::_InitGlfw()
-{
+bool Application::CreateProgram(const std::vector<std::string> shaderSources, const std::vector<GLenum> shaderTypes) {
+    bool result = false;
+    bool retCode = false;
+
+    m_program = new Program();
+    LOG_PROCESS_ERROR(m_program != nullptr);
+    retCode = m_program->Init(shaderSources, shaderTypes);
+    LOG_PROCESS_ERROR(retCode);
+
+    result = true;
+Exit0:
+    if (!result) {
+        delete m_program;
+        m_program = nullptr;
+    }
+    return result;
+}
+
+
+//----------------------------------------------------------------------------------------------------------------------
+bool Application::_InitGlfw() {
     // initialise GLFW
     //glfwSetErrorCallback(this->_OnGLFWError);
-    if (!glfwInit())
-    {
+    if (!glfwInit()) {
         throw std::runtime_error("glfwInit failed.");
     }
 
@@ -123,8 +128,7 @@ bool Application::_InitGlfw()
     glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
 
     m_window = glfwCreateWindow(800, 600, "This is Title", NULL, NULL);
-    if (m_window == NULL)
-    {
+    if (m_window == NULL) {
         throw std::runtime_error("Creating window failed.");
     }
 
@@ -133,19 +137,16 @@ bool Application::_InitGlfw()
 }
 
 
-void Application::_OnGLFWError(int errCode, const char *msg)
-{
+void Application::_OnGLFWError(int errCode, const char *msg) {
     throw std::runtime_error(msg);
 }
 
 
 //----------------------------------------------------------------------------------------------------------------------
-bool Application::_InitGlew()
-{
+bool Application::_InitGlew() {
     // initialise GLEW
     glewExperimental = GL_TRUE; //stops glew crashing on OSX :-/
-    if (glewInit() != GLEW_OK)
-    {
+    if (glewInit() != GLEW_OK) {
         throw std::runtime_error("glewInit failed.");
     }
 
@@ -154,8 +155,7 @@ bool Application::_InitGlew()
 
 
 //----------------------------------------------------------------------------------------------------------------------
-bool Application::_PrintInfo()
-{
+bool Application::_PrintInfo() {
     std::cout << "OpenGL version: " << glGetString(GL_VERSION) << std::endl;
     std::cout << "GLSL version: " << glGetString(GL_SHADING_LANGUAGE_VERSION) << std::endl;
     std::cout << "Vendor: " << glGetString(GL_VENDOR) << std::endl;

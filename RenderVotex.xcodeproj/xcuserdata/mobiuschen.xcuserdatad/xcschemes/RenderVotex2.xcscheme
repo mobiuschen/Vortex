@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B53B8ED61EE3C77900FFB91C"
-            BuildableName = "RenderVotex2.app"
+            BuildableName = "RenderVotex2"
             BlueprintName = "RenderVotex2"
             ReferencedContainer = "container:RenderVotex.xcodeproj">
          </BuildableReference>
@@ -75,7 +75,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B53B8ED61EE3C77900FFB91C"
-            BuildableName = "RenderVotex2.app"
+            BuildableName = "RenderVotex2"
             BlueprintName = "RenderVotex2"
             ReferencedContainer = "container:RenderVotex.xcodeproj">
          </BuildableReference>

@@ -6,7 +6,6 @@
 #include <fstream>
 #include <sstream>
 #include <iostream>
-#include <GL/glew.h>
 #include <assert.h>
 #include "Shader.h"
 
