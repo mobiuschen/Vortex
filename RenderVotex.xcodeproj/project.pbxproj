@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		91BCE0D69CB0E787D2B0B398 /* glew.c in Sources */ = {isa = PBXBuildFile; fileRef = 91BCEF2A0E3A272DE64C76B5 /* glew.c */; };
+		91BCE19C3E742364D9490646 /* TessellationTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91BCE6A2057F28CC7C6370A7 /* TessellationTriangle.cpp */; };
 		91BCE1D380123C58C652DB6B /* DrawTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91BCE4CE08E01817A3B6F894 /* DrawTriangle.cpp */; };
 		91BCE3585C973EBF238B6129 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91BCE7AF1561D4A3FA6D17C7 /* Application.cpp */; };
 		91BCE3BF4D6959A80E6B60CA /* platform_osx.mm in Sources */ = {isa = PBXBuildFile; fileRef = 91BCEC3B0470AEEDA492C5AF /* platform_osx.mm */; };
@@ -221,6 +222,7 @@
 				91BCE426384408B1754C3376 /* Program.cpp in Sources */,
 				91BCE3585C973EBF238B6129 /* Application.cpp in Sources */,
 				91BCE1D380123C58C652DB6B /* DrawTriangle.cpp in Sources */,
+				91BCE19C3E742364D9490646 /* TessellationTriangle.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

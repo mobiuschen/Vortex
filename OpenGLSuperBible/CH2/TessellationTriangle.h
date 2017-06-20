@@ -7,24 +7,17 @@
 #include <GL/glew.h>
 #include "Application.h"
 
-class TessellationTriangle : Application
+class TessellationTriangle : public Application
 {
 public:
-    bool Startup();
+    TessellationTriangle();
+    ~TessellationTriangle();
+protected:
+    virtual bool Startup();
 
-    bool Render(double currentTime);
+    virtual bool Render(double currentTime);
 
-    bool Run();
-
-    bool Init()
-    {
-        return Application::Init();
-    }
-
-private:
-
-    bool CreateProgram();
-
-    
+private :
+    GLuint m_vertex_array_object;
 };
 

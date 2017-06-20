@@ -47,8 +47,3 @@ bool DrawTriangle::Render(double currentTime) {
     glDrawArrays(GL_TRIANGLES, 0, 3);
     return true;
 }
-
-
-bool DrawTriangle::Run() {
-    return Application::Run();
-}

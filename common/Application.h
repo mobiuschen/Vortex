@@ -9,6 +9,7 @@
 #include <vector>
 
 class GLFWwindow;
+
 class Program;
 
 
@@ -25,9 +26,9 @@ public:
 
 protected:
 
-    virtual bool Startup();
+    virtual bool Startup() = 0;
 
-    virtual bool Render(double currentTime);
+    virtual bool Render(double currentTime) = 0;
 
     virtual bool Shutdown();
 
@@ -43,7 +44,7 @@ private:
     void _OnGLFWError(int errCode, const char *msg);
 
 protected:
-    Program* m_program;
+    Program *m_program;
     GLFWwindow *m_window;
 
     bool m_closeFlag;

@@ -10,9 +10,9 @@
 
 // standard C++ libraries
 
-#include "platform.hpp"
 #include "DrawTriangle.h"
-#include <glm/glm.hpp>
+#include "Utility.h"
+#include "TessellationTriangle.h"
 #include <iostream>
 
 
@@ -20,15 +20,11 @@ int main(int argc, const char *argv[]) {
     int result = false;
     bool retCode = false;
 
-    std::cout << "Hello world" << std::endl;
-    DrawTriangle app;
-
+//    DrawTriangle app;
+    TessellationTriangle app;
     retCode = app.Init();
-    if (!retCode)
-        goto Exit0;
-
+    LOG_PROCESS_ERROR(retCode);
     app.Run();
-
 
     result = true;
 Exit0:

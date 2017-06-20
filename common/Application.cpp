@@ -35,18 +35,6 @@ bool Application::Init() {
 
         if (!GLEW_VERSION_3_2)
             throw std::runtime_error("OpenGL API 3.2 is not available.");
-
-        retCode = Startup();
-        PROCESS_ERROR(retCode);
-
-        while (!glfwWindowShouldClose(m_window)) {
-            glfwPollEvents();
-            retCode = Render(0);
-            PROCESS_ERROR(retCode);
-            glfwSwapBuffers(m_window);
-        }
-
-        glfwTerminate();
     } catch (const std::exception &e) {
         std::cerr << "ERROR: " << e.what() << std::endl;
         goto Exit0;
@@ -63,12 +51,18 @@ bool Application::Run() {
     bool retCode = false;
 
     retCode = Startup();
-    if (!retCode)
-        goto Exit0;
+    LOG_PROCESS_ERROR(retCode);
 
-    while (!m_closeFlag) {
-        Render(glfwGetTime());
+    while (!glfwWindowShouldClose(m_window)) {
+        glfwPollEvents();
+        retCode = Render(0);
+        if (!retCode)
+            break;
+        
+        glfwSwapBuffers(m_window);
     }
+
+    glfwTerminate();
 
     result = true;
 Exit0:

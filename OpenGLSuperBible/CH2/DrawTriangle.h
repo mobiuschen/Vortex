@@ -7,18 +7,12 @@
 #include <GL/glew.h>
 #include "Application.h"
 
-class DrawTriangle : Application
+class DrawTriangle : public Application
 {
-public :
-    bool Startup();
+protected:
+    virtual bool Startup();
 
-    bool Render(double currentTime);
-
-    bool Run();
-
-    inline bool Init() {
-        return Application::Init();
-    }
+    virtual bool Render(double currentTime);
 
 private :
     GLuint m_vertex_array_object = 0;

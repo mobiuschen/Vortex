@@ -13,7 +13,6 @@ bool Program::Init(const std::vector<std::string> shaderSources, const std::vect
     LOG_PROCESS_ERROR(shaderSources.size() == shaderTypes.size());
 
     m_object = glCreateProgram();
-    std::printf("======= %d\n", m_object);
     LOG_PROCESS_ERROR(m_object != 0);
     for (int i = 0, n = (int) shaderSources.size(); i < n; i++) {
         Shader *shader = Shader::ShaderFromFile(shaderSources[i], shaderTypes[i]);
