@@ -10,8 +10,8 @@ bool DrawTriangle::Startup() {
     bool retCode = false;
 
     std::vector<std::string> sources({
-            "triangle_vertex.shader",
-            "simple_fragment.shader"
+            "vertex.shader",
+            "fragment.shader"
     });
     std::vector<GLenum> shaderTypes({GL_VERTEX_SHADER, GL_FRAGMENT_SHADER});
     retCode = CreateProgram(sources, shaderTypes);
@@ -42,8 +42,8 @@ bool DrawTriangle::Render(double currentTime) {
             0.0f
     };
 
-//    glVertexAttrib4fv(0, offset);
-//    glVertexAttrib4fv(1, vsColor);
+    glVertexAttrib4fv(0, offset);
+    glVertexAttrib4fv(1, vsColor);
     glDrawArrays(GL_TRIANGLES, 0, 3);
     return true;
 }

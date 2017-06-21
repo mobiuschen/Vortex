@@ -6,28 +6,26 @@
 #include <fstream>
 #include <sstream>
 #include <iostream>
-#include <assert.h>
 #include "Shader.h"
+#include "Utility.h"
 
 
-Shader *Shader::ShaderFromFile(const std::string &filePath, GLenum shaderType)
-{
+Shader *Shader::ShaderFromFile(const std::string &filePath, GLenum shaderType) {
     Shader *shader = nullptr;
     std::ifstream ifstream;
     std::stringstream buffer;
     bool retCode = false;
-                                                 
+
+    std::cout << "Create shader from " << filePath << std::endl;
+
     ifstream.open(filePath, std::ios::in | std::ios::binary);
     retCode = ifstream.is_open();
-    assert(retCode);
-    if (!retCode)
-        goto Exit0;
+    LOG_PROCESS_ERROR(retCode);
 
     buffer << ifstream.rdbuf();
 
     shader = new Shader();
-    if (!shader->Init(buffer.str(), shaderType))
-    {
+    if (!shader->Init(buffer.str(), shaderType)) {
         delete shader;
         shader = nullptr;
     }
@@ -36,23 +34,19 @@ Exit0:
 }
 
 Shader::Shader() :
-        m_object(0)
-{
+        m_object(0) {
 }
 
 
-Shader::~Shader()
-{
-    if (m_object > 0)
-    {
+Shader::~Shader() {
+    if (m_object > 0) {
         glDeleteShader(m_object);
         m_object = 0;
     }
 }
 
 
-bool Shader::Init(const std::string &shaderCode, GLenum shaderType)
-{
+bool Shader::Init(const std::string &shaderCode, GLenum shaderType) {
     bool result = false;
 
     m_object = glCreateShader(shaderType);
@@ -65,8 +59,7 @@ bool Shader::Init(const std::string &shaderCode, GLenum shaderType)
         glShaderSource(m_object, 1, (const GLchar **) &str, NULL);
         glCompileShader(m_object);
         glGetShaderiv(m_object, GL_COMPILE_STATUS, &status);
-        if (status == GL_FALSE)
-        {
+        if (status == GL_FALSE) {
             GLint infoLogLength = 0;
             char *strInfoLog = nullptr;
             glGetShaderiv(m_object, GL_INFO_LOG_LENGTH, &infoLogLength);

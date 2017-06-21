@@ -55,7 +55,7 @@ bool Application::Run() {
 
     while (!glfwWindowShouldClose(m_window)) {
         glfwPollEvents();
-        retCode = Render(0);
+        retCode = Render(glfwGetTime());
         if (!retCode)
             break;
         

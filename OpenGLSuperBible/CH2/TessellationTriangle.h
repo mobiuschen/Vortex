@@ -11,7 +11,6 @@ class TessellationTriangle : public Application
 {
 public:
     TessellationTriangle();
-    ~TessellationTriangle();
 protected:
     virtual bool Startup();
 
