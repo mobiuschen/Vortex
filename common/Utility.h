@@ -54,8 +54,16 @@ __pragma(warning(disable:4127))
 #define LOG_PROCESS_ERROR(condition)    \
   DO_WHILE_MACRO_BEGIN                  \
     auto macroRet = (condition);        \
-    if (!macroRet) {                     \
+    if (!macroRet) {                    \
       printf("LOG_PROCESS_ERROR(%s) at File %s(%d) Function %s\n", #condition, __FILE__, __LINE__, __FUNCTION__);  \
       goto Exit0;                       \
+    }                                   \
+  DO_WHILE_MACRO_END(false)
+
+#define LOG_ASSERT(condition)    \
+  DO_WHILE_MACRO_BEGIN                  \
+    auto macroRet = (condition);        \
+    if (!macroRet) {                    \
+      printf("LOG_PROCESS_ERROR(%s) at File %s(%d) Function %s\n", #condition, __FILE__, __LINE__, __FUNCTION__);  \
     }                                   \
   DO_WHILE_MACRO_END(false)

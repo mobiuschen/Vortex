@@ -12,6 +12,7 @@
 		91BCE19C3E742364D9490646 /* TessellationTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91BCE6A2057F28CC7C6370A7 /* TessellationTriangle.cpp */; };
 		91BCE1D380123C58C652DB6B /* DrawTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91BCE4CE08E01817A3B6F894 /* DrawTriangle.cpp */; };
 		91BCE258173BB9CA1CBAA2C5 /* vertex.shader in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91BCEC98BF3997BEF826127F /* vertex.shader */; };
+		91BCE30026083A596C746BDD /* geometry.shader in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91BCEFB718B4CA8438C0EEE4 /* geometry.shader */; };
 		91BCE3585C973EBF238B6129 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91BCE7AF1561D4A3FA6D17C7 /* Application.cpp */; };
 		91BCE3BF4D6959A80E6B60CA /* platform_osx.mm in Sources */ = {isa = PBXBuildFile; fileRef = 91BCEC3B0470AEEDA492C5AF /* platform_osx.mm */; };
 		91BCE426384408B1754C3376 /* Program.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91BCE16D36C6D15B0746C76F /* Program.cpp */; };
@@ -21,6 +22,7 @@
 		91BCEC625FF07D6D206AA50A /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91BCE5D103839721C54F8779 /* Shader.cpp */; };
 		91BCED3B899E5CFFBB5522EB /* fragment_constant_color.shader in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91BCE5979FEDF45CCA678962 /* fragment_constant_color.shader */; };
 		91BCEDD86E2DCD3FE82892D2 /* fragment.shader in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91BCE66BDA522A605471A54D /* fragment.shader */; };
+		91BCEDE100F65DEC4B6EBF91 /* UseGeometryShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91BCE0B1006ED673739B8EB6 /* UseGeometryShader.cpp */; };
 		B53B8EAE1EE3B14C00FFB91C /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53B8EAD1EE3B14C00FFB91C /* OpenGL.framework */; };
 		B53B8EB01EE3B16400FFB91C /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53B8EAF1EE3B16400FFB91C /* IOKit.framework */; };
 		B53B8EB21EE3B16E00FFB91C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53B8EB11EE3B16E00FFB91C /* Cocoa.framework */; };
@@ -39,6 +41,7 @@
 				91BCE80F2EAF7242B1129036 /* tess_control.shader in CopyFiles */,
 				91BCE0A7E630BBB84CCF74A5 /* tess_evaluation.shader in CopyFiles */,
 				91BCE258173BB9CA1CBAA2C5 /* vertex.shader in CopyFiles */,
+				91BCE30026083A596C746BDD /* geometry.shader in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		91BCE061E7E4F72732D87082 /* Shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Shader.h; path = common/Shader.h; sourceTree = "<group>"; };
+		91BCE0B1006ED673739B8EB6 /* UseGeometryShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UseGeometryShader.cpp; sourceTree = "<group>"; };
 		91BCE16D36C6D15B0746C76F /* Program.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Program.cpp; path = common/Program.cpp; sourceTree = "<group>"; };
 		91BCE35B08E94BCF18DB8F6A /* TessellationTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TessellationTriangle.h; sourceTree = "<group>"; };
 		91BCE4AEEF9451AB7097C084 /* Application.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Application.h; path = common/Application.h; sourceTree = "<group>"; };
@@ -56,6 +60,7 @@
 		91BCE6A2057F28CC7C6370A7 /* TessellationTriangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TessellationTriangle.cpp; sourceTree = "<group>"; };
 		91BCE74D54343FF9682F096A /* tess_evaluation.shader */ = {isa = PBXFileReference; lastKnownFileType = file.shader; path = tess_evaluation.shader; sourceTree = "<group>"; };
 		91BCE7AF1561D4A3FA6D17C7 /* Application.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Application.cpp; path = common/Application.cpp; sourceTree = "<group>"; };
+		91BCE8381001DF024BAB22E5 /* UseGeometryShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UseGeometryShader.h; sourceTree = "<group>"; };
 		91BCE95D1F1EACC6E7E65A98 /* platform.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = platform.hpp; path = common/platform.hpp; sourceTree = "<group>"; };
 		91BCEA2EF817F0D25E9CC187 /* DrawTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawTriangle.h; sourceTree = "<group>"; };
 		91BCEA36CCA065581E93AB48 /* RenderVotex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = RenderVotex; path = "../../Library/Caches/AppCode2017.1/DerivedData/RenderVotex-dftfhxhdtxbrjmeewzuzpdshdruu/Build/Products/Debug/RenderVotex"; sourceTree = "<group>"; };
@@ -67,6 +72,7 @@
 		91BCEEFCD48DB6E9E80503AD /* tess_control.shader */ = {isa = PBXFileReference; lastKnownFileType = file.shader; path = tess_control.shader; sourceTree = "<group>"; };
 		91BCEF2A0E3A272DE64C76B5 /* glew.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glew.c; path = common/thirdparty/glew/src/glew.c; sourceTree = "<group>"; };
 		91BCEF3A23811640E072A793 /* Program.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Program.h; path = common/Program.h; sourceTree = "<group>"; };
+		91BCEFB718B4CA8438C0EEE4 /* geometry.shader */ = {isa = PBXFileReference; lastKnownFileType = file.shader; path = geometry.shader; sourceTree = "<group>"; };
 		B53B8EAD1EE3B14C00FFB91C /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		B53B8EAF1EE3B16400FFB91C /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		B53B8EB11EE3B16E00FFB91C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -137,6 +143,7 @@
 				91BCE66BDA522A605471A54D /* fragment.shader */,
 				91BCEEFCD48DB6E9E80503AD /* tess_control.shader */,
 				91BCE5979FEDF45CCA678962 /* fragment_constant_color.shader */,
+				91BCEFB718B4CA8438C0EEE4 /* geometry.shader */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -165,6 +172,8 @@
 				91BCE6A2057F28CC7C6370A7 /* TessellationTriangle.cpp */,
 				91BCE35B08E94BCF18DB8F6A /* TessellationTriangle.h */,
 				91BCE877783647DC31DCA53A /* Resources */,
+				91BCE0B1006ED673739B8EB6 /* UseGeometryShader.cpp */,
+				91BCE8381001DF024BAB22E5 /* UseGeometryShader.h */,
 			);
 			path = CH2;
 			sourceTree = "<group>";
@@ -235,6 +244,7 @@
 				91BCE3585C973EBF238B6129 /* Application.cpp in Sources */,
 				91BCE1D380123C58C652DB6B /* DrawTriangle.cpp in Sources */,
 				91BCE19C3E742364D9490646 /* TessellationTriangle.cpp in Sources */,
+				91BCEDE100F65DEC4B6EBF91 /* UseGeometryShader.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,17 @@
 #include "Utility.h"
 #include "Shader.h"
 
+Program::Program() : m_object(0) {
+
+}
+
+Program::~Program() {
+    if (m_object > 0) {
+        glDeleteProgram(m_object);
+        m_object = 0;
+    }
+}
+
 bool Program::Init(const std::vector<std::string> shaderSources, const std::vector<GLenum> shaderTypes) {
     bool result = false;
     std::vector<Shader *> shaders(shaderSources.size());
@@ -29,4 +40,5 @@ Exit0:
     }
     return result;
 }
+
 

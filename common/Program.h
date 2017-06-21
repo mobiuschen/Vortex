@@ -10,6 +10,9 @@
 class Program
 {
 public:
+    Program();
+    ~Program();
+
     bool Init(const std::vector<std::string> shaderSources, const std::vector<GLenum> shaderTypes);
 
     inline GLuint GetObject() const {

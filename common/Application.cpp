@@ -56,6 +56,7 @@ bool Application::Run() {
     while (!glfwWindowShouldClose(m_window)) {
         glfwPollEvents();
         retCode = Render(glfwGetTime());
+        LOG_ASSERT(retCode);
         if (!retCode)
             break;
         
@@ -74,17 +75,6 @@ bool Application::Shutdown() {
     m_closeFlag = true;
     return true;
 }
-
-//----------------------------------------------------------------------------------------------------------------------
-bool Application::Startup() {
-    return true;
-}
-
-
-bool Application::Render(double currentTime) {
-    return true;
-}
-
 
 //----------------------------------------------------------------------------------------------------------------------
 bool Application::CreateProgram(const std::vector<std::string> shaderSources, const std::vector<GLenum> shaderTypes) {

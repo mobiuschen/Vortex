@@ -13,6 +13,7 @@
 #include "DrawTriangle.h"
 #include "Utility.h"
 #include "TessellationTriangle.h"
+#include "UseGeometryShader.h"
 #include <iostream>
 
 
@@ -21,7 +22,9 @@ int main(int argc, const char *argv[]) {
     bool retCode = false;
 
 //    DrawTriangle app;
-    TessellationTriangle app;
+//    TessellationTriangle app;
+    UseGeometryShader app;
+
     retCode = app.Init();
     LOG_PROCESS_ERROR(retCode);
     app.Run();

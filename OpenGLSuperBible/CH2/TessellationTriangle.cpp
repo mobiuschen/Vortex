@@ -38,7 +38,7 @@ bool TessellationTriangle::Startup() {
 
     glGenVertexArrays(1, &m_vertex_array_object);
     glBindVertexArray(m_vertex_array_object);
-    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+//    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 
     result = true;
 Exit0:
@@ -46,7 +46,7 @@ Exit0:
 }
 
 bool TessellationTriangle::Render(double currentTime) {
-    const GLfloat bgColor[] = {0.5f, 0.0f, 0.0f, 1.0f};
+    const GLfloat bgColor[] = {0.1, 0.1, 0.1, 1};
     glClearBufferfv(GL_COLOR, 0, bgColor);
     glUseProgram(m_program->GetObject());
 
@@ -62,7 +62,7 @@ bool TessellationTriangle::Render(double currentTime) {
     glVertexAttrib4fv(0, offset);
 
     glDrawArrays(GL_PATCHES, 0, 3);
-    glPointSize(20.0f);
+    glPointSize(5.0f);
     return true;
 }
 
