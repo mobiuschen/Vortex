@@ -11,7 +11,8 @@ bool DrawTriangle::Startup() {
 
     std::vector<std::string> sources({
             "vertex.shader",
-            "fragment.shader"
+//            "fragment.shader"
+            "fragment_position_color.shader"
     });
     std::vector<GLenum> shaderTypes({GL_VERTEX_SHADER, GL_FRAGMENT_SHADER});
     retCode = CreateProgram(sources, shaderTypes);

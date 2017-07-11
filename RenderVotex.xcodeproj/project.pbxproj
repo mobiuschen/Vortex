@@ -18,6 +18,7 @@
 		91BCE426384408B1754C3376 /* Program.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91BCE16D36C6D15B0746C76F /* Program.cpp */; };
 		91BCE452EA332EE09745A20F /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91BCEC202FFC168E714FB5C5 /* libglfw3.a */; };
 		91BCE58D967F56317569D225 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91BCEDF21208899F298F852B /* main.cpp */; };
+		91BCE5B5A23EC3A767816AD0 /* fragment_position_color.shader in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91BCECA7B28B2CEB43AC5B34 /* fragment_position_color.shader */; };
 		91BCE80F2EAF7242B1129036 /* tess_control.shader in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91BCEEFCD48DB6E9E80503AD /* tess_control.shader */; };
 		91BCEC625FF07D6D206AA50A /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91BCE5D103839721C54F8779 /* Shader.cpp */; };
 		91BCED3B899E5CFFBB5522EB /* fragment_constant_color.shader in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91BCE5979FEDF45CCA678962 /* fragment_constant_color.shader */; };
@@ -42,6 +43,7 @@
 				91BCE0A7E630BBB84CCF74A5 /* tess_evaluation.shader in CopyFiles */,
 				91BCE258173BB9CA1CBAA2C5 /* vertex.shader in CopyFiles */,
 				91BCE30026083A596C746BDD /* geometry.shader in CopyFiles */,
+				91BCE5B5A23EC3A767816AD0 /* fragment_position_color.shader in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +70,7 @@
 		91BCEC3B0470AEEDA492C5AF /* platform_osx.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = platform_osx.mm; path = platforms/osx/platform_osx.mm; sourceTree = "<group>"; };
 		91BCEC651DB41B8EB1838043 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utility.h; path = common/Utility.h; sourceTree = "<group>"; };
 		91BCEC98BF3997BEF826127F /* vertex.shader */ = {isa = PBXFileReference; lastKnownFileType = file.shader; path = vertex.shader; sourceTree = "<group>"; };
+		91BCECA7B28B2CEB43AC5B34 /* fragment_position_color.shader */ = {isa = PBXFileReference; lastKnownFileType = file.shader; path = fragment_position_color.shader; sourceTree = "<group>"; };
 		91BCEDF21208899F298F852B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		91BCEEFCD48DB6E9E80503AD /* tess_control.shader */ = {isa = PBXFileReference; lastKnownFileType = file.shader; path = tess_control.shader; sourceTree = "<group>"; };
 		91BCEF2A0E3A272DE64C76B5 /* glew.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glew.c; path = common/thirdparty/glew/src/glew.c; sourceTree = "<group>"; };
@@ -144,6 +147,7 @@
 				91BCEEFCD48DB6E9E80503AD /* tess_control.shader */,
 				91BCE5979FEDF45CCA678962 /* fragment_constant_color.shader */,
 				91BCEFB718B4CA8438C0EEE4 /* geometry.shader */,
+				91BCECA7B28B2CEB43AC5B34 /* fragment_position_color.shader */,
 			);
 			path = Resources;
 			sourceTree = "<group>";

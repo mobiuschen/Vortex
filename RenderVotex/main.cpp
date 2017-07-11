@@ -21,9 +21,9 @@ int main(int argc, const char *argv[]) {
     int result = false;
     bool retCode = false;
 
-//    DrawTriangle app;
+    DrawTriangle app;
 //    TessellationTriangle app;
-    UseGeometryShader app;
+//    UseGeometryShader app;
 
     retCode = app.Init();
     LOG_PROCESS_ERROR(retCode);
@@ -32,5 +32,4 @@ int main(int argc, const char *argv[]) {
     result = true;
 Exit0:
     return result;
-
 }

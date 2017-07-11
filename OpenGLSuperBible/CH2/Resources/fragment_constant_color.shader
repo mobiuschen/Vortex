@@ -1,5 +1,5 @@
 #version 410 core
-
+//固定颜色
 out vec4 color;
 
 void main(void){
