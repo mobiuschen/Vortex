@@ -32,7 +32,7 @@ bool DrawTriangle::Render(double currentTime) {
     glClearBufferfv(GL_COLOR, 0, bgColor);
     glUseProgram(m_program->GetObject());
 
-    const float offset[4] = {
+    const float offset[4] = {                                                                       
             (float) sin(currentTime) * 0.5f,
             (float) cos(currentTime) * 0.6f,
             0.0f, 0.0f};

@@ -6,6 +6,7 @@
 #pragma once
 
 #include <stdio.h>
+#include <string>
 
 
 inline const char *LogFileNameAndFunction(const char *fileName)
