@@ -51,7 +51,7 @@ bool UsingBuffer::Startup() {
     glBindBuffer(GL_ARRAY_BUFFER, m_buffer_obj);
     glBufferData(GL_ARRAY_BUFFER, offsetSize + colorSize, NULL, GL_DYNAMIC_DRAW);
     //////////
-    
+
     result = true;
 Exit0:
     return result;
@@ -62,21 +62,34 @@ bool UsingBuffer::Render(double currentTime) {
     const GLfloat bgColor[] = {0.5f, 0.5f, 0.5f, 1.0f};
     size_t offsetSize = 0;
     size_t colorSize = 0;
-    
+
     glClearBufferfv(GL_COLOR, 0, bgColor);
     glUseProgram(m_program->GetObject());
 
-//    m_vertex_offset[0] = (float) sin(currentTime) * 0.5f;
-//    m_vertex_offset[1] = (float) cos(currentTime) * 0.6f;
-    m_vertex_offset[0] = -0.25f;
-    m_vertex_offset[1] = 0.0f;
-    m_vertex_offset[2] = 0.0f;
-    m_vertex_offset[3] = 0.0f;
+    for (int i = 0, n = LEN(m_vertex_offset); i < n; i++) {
+        int t = i % 4;
+        if (t == 0)
+            m_vertex_offset[i] = (float) sin(currentTime) * 0.5f;
+        else if (t == 1)
+            m_vertex_offset[i] = (float) cos(currentTime) * 0.6f;
+        else if (t == 2)
+            m_vertex_offset[i] = 0.0f;
+        else if (t == 3)
+            m_vertex_offset[i] = 0.0f;
+    }
 
-    m_vertext_color[0] = 1.0f;
-    m_vertext_color[1] = (float) sin(currentTime) * 0.5f;
-    m_vertext_color[2] = (float) cos(currentTime) * 0.5f;
-    m_vertext_color[3] = 1.0f;
+
+    for (int i = 0, n = LEN(m_vertext_color); i < n; i++) {
+        int t = i % 4;
+        if (t == 0)
+            m_vertext_color[i] = 1.0f;
+        else if (t == 1)
+            m_vertext_color[i] = (float) sin(currentTime) * 0.5f;
+        else if (t == 2)
+            m_vertext_color[i] = (float) cos(currentTime) * 0.5f;
+        else if (t == 3)
+            m_vertext_color[i] = 1.0f;
+    }
 
     offsetSize = sizeof(m_vertex_offset);
     colorSize = sizeof(m_vertext_color);
@@ -94,27 +107,14 @@ bool UsingBuffer::Render(double currentTime) {
     //////////
 
     ////////// OpenGL 4.1
-//    void glBufferSubData(GLenum target,
-//                         GLintptr offset,
-//                         GLsizeiptr size,
-//                         const GLvoid * data);
     glBufferSubData(GL_ARRAY_BUFFER, 0, offsetSize, m_vertex_offset);
-//    glBufferSubData(GL_ARRAY_BUFFER, offsetSize, colorSize, m_vertext_color);
+    glBufferSubData(GL_ARRAY_BUFFER, offsetSize, colorSize, m_vertext_color);
 
-//    void glVertexAttribPointer( GLuint index,
-//                                GLint size,
-//                                GLenum type,
-//                                GLboolean normalized,
-//                                GLsizei stride,
-//                                const GLvoid * pointer);
-    glVertexAttribPointer(0, 4, GL_FLOAT, GL_FALSE, 0, NULL);
+    glVertexAttribPointer(0, 4, GL_FLOAT, GL_FALSE, 0, (const GLvoid *) (0));
     glEnableVertexAttribArray(0);
 
-//    glVertexAttribPointer(1, 4, GL_FLOAT, GL_TRUE, 0, (const GLvoid*)(4 * sizeof(GLfloat)));
-//    glEnableVertexAttribArray(1);
-
-//    glVertexAttrib4fv(0, m_vertex_offset);
-//    glVertexAttrib4fv(1, m_vertext_color);
+    glVertexAttribPointer(1, 4, GL_FLOAT, GL_TRUE, 0, (const GLvoid *) (4 * sizeof(GLfloat)));
+    glEnableVertexAttribArray(1);
     //////////
 
     glDrawArrays(GL_TRIANGLES, 0, 3);

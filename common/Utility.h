@@ -68,3 +68,5 @@ __pragma(warning(disable:4127))
       printf("LOG_PROCESS_ERROR(%s) at File %s(%d) Function %s\n", #condition, __FILE__, __LINE__, __FUNCTION__);  \
     }                                   \
   DO_WHILE_MACRO_END(false)
+
+#define LEN(array) (sizeof(array)/sizeof(array[0]))

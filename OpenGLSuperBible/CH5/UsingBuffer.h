@@ -24,6 +24,6 @@ private:
     GLuint m_vao;
     GLuint m_buffer_obj;
 
-    float m_vertex_offset[4];
-    float m_vertext_color[4];
+    float m_vertex_offset[12];
+    float m_vertext_color[12];
 };
