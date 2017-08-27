@@ -41,13 +41,13 @@ bool UsingBuffer::Startup() {
     glGenVertexArrays(1, &m_vao);
     glBindVertexArray(m_vao);
 
-    glGenBuffers(1, &m_buffer_obj);
     ////////// OpenGL 4.5
-//    glCreateBuffers(1, &m_buffer_obj); //opengl 4.5
+//    glCreateBuffers(1, &m_buffer_obj);
 //    glNamedBufferStorage(m_buffer_obj, posArySize + vsArySize, nullptr, GL_DYNAMIC_STORAGE_BIT);
     //////////
 
     ////////// OpenGL 4.1
+    glGenBuffers(1, &m_buffer_obj);
     glBindBuffer(GL_ARRAY_BUFFER, m_buffer_obj);
     glBufferData(GL_ARRAY_BUFFER, offsetSize + colorSize, NULL, GL_DYNAMIC_DRAW);
     //////////
@@ -107,8 +107,16 @@ bool UsingBuffer::Render(double currentTime) {
     //////////
 
     ////////// OpenGL 4.1
-    glBufferSubData(GL_ARRAY_BUFFER, 0, offsetSize, m_vertex_offset);
-    glBufferSubData(GL_ARRAY_BUFFER, offsetSize, colorSize, m_vertext_color);
+    //Filling data method #1
+//    glBufferSubData(GL_ARRAY_BUFFER, 0, offsetSize, m_vertex_offset);
+//    glBufferSubData(GL_ARRAY_BUFFER, offsetSize, colorSize, m_vertext_color);
+
+    //Filling data method #2
+    void* ptr = glMapBuffer(GL_ARRAY_BUFFER, GL_WRITE_ONLY);
+    memcpy(ptr, m_vertex_offset, offsetSize);
+    memcpy((char *)ptr + offsetSize, m_vertext_color, colorSize);
+    glUnmapBuffer(GL_ARRAY_BUFFER);
+
 
     glVertexAttribPointer(0, 4, GL_FLOAT, GL_FALSE, 0, (const GLvoid *) (0));
     glEnableVertexAttribArray(0);
@@ -116,6 +124,8 @@ bool UsingBuffer::Render(double currentTime) {
     glVertexAttribPointer(1, 4, GL_FLOAT, GL_TRUE, 0, (const GLvoid *) (4 * sizeof(GLfloat)));
     glEnableVertexAttribArray(1);
     //////////
+
+
 
     glDrawArrays(GL_TRIANGLES, 0, 3);
     return true;
