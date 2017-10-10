@@ -46,7 +46,7 @@ Exit0:
 }
 
 bool TessellationTriangle::Render(double currentTime) {
-    const GLfloat bgColor[] = {0.1, 0.1, 0.1, 1};
+    const GLfloat bgColor[] = {0.1f, 0.1f, 0.1f, 1.0f};
     glClearBufferfv(GL_COLOR, 0, bgColor);
     glUseProgram(m_program->GetObject());
 

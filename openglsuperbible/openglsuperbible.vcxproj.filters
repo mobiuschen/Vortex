@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ch2">
+      <UniqueIdentifier>{0aebec82-45f6-4c62-83bc-37e985d2fd08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ch5">
+      <UniqueIdentifier>{f3911f52-5a84-44a5-8c77-3b9de458e9bd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="ch5\UsingBuffer.cpp">
+      <Filter>ch5</Filter>
+    </ClCompile>
+    <ClCompile Include="ch2\DrawTriangle.cpp">
+      <Filter>ch2</Filter>
+    </ClCompile>
+    <ClCompile Include="ch2\TessellationTriangle.cpp">
+      <Filter>ch2</Filter>
+    </ClCompile>
+    <ClCompile Include="ch2\UseGeometryShader.cpp">
+      <Filter>ch2</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ch5\UsingBuffer.h">
+      <Filter>ch5</Filter>
+    </ClInclude>
+    <ClInclude Include="ch2\DrawTriangle.h">
+      <Filter>ch2</Filter>
+    </ClInclude>
+    <ClInclude Include="ch2\TessellationTriangle.h">
+      <Filter>ch2</Filter>
+    </ClInclude>
+    <ClInclude Include="ch2\UseGeometryShader.h">
+      <Filter>ch2</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ch5\resources\fragment_1.shader">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ch5\resources\vertex_1.shader">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

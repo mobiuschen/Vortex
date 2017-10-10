@@ -1,7 +1,7 @@
 
 #include "DrawTriangle.h"
 #include <cmath>
-#import "Shader.h"
+#include "Shader.h"
 #include "Utility.h"
 #include "Program.h"
 

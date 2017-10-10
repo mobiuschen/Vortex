@@ -10,11 +10,11 @@
 
 // standard C++ libraries
 
-#include "DrawTriangle.h"
+#include "ch2/DrawTriangle.h"
 #include "Utility.h"
-#include "TessellationTriangle.h"
-#include "UseGeometryShader.h"
-#include "UsingBuffer.h"
+#include "ch2/TessellationTriangle.h"
+#include "ch2/UseGeometryShader.h"
+#include "ch5/UsingBuffer.h"
 #include <iostream>
 
 
