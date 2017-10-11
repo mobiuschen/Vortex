@@ -8,7 +8,7 @@
 #include <GL/glew.h>
 #include <vector>
 
-class GLFWwindow;
+struct GLFWwindow;
 
 class Program;
 

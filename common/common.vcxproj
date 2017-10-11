@@ -77,7 +77,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>$(SolutionDir)common\include;$(SolutionDir)common\thirdparty\glfw\include;$(SolutionDir)common\thirdparty\glew\include;$(SolutionDir)common\thirdparty\glm;$(SolutionDir)common\thirdparty\stb_image</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_CONSOLE;_LIB;GLEW_STATIC;GLM_FORCE_RADIANS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_CONSOLE;_LIB;GLEW_STATIC;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Lib>
       <AdditionalDependencies>glfw3.lib;opengl32.lib;legacy_stdio_definitions.lib</AdditionalDependencies>
