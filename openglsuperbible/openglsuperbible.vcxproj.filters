@@ -1,15 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
     <Filter Include="ch2">
       <UniqueIdentifier>{0aebec82-45f6-4c62-83bc-37e985d2fd08}</UniqueIdentifier>
     </Filter>
     <Filter Include="ch5">
       <UniqueIdentifier>{f3911f52-5a84-44a5-8c77-3b9de458e9bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{42349c59-faf2-4f07-b1ea-8aa20cd6e708}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -40,13 +39,35 @@
     <ClInclude Include="ch2\UseGeometryShader.h">
       <Filter>ch2</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ch5\resources\fragment_1.shader">
-      <Filter>Resource Files</Filter>
+    <None Include="..\resources\fragment.shader">
+      <Filter>resources</Filter>
     </None>
-    <None Include="ch5\resources\vertex_1.shader">
-      <Filter>Resource Files</Filter>
+    <None Include="..\resources\fragment_1.shader">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="..\resources\fragment_constant_color.shader">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="..\resources\fragment_position_color.shader">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="..\resources\geometry.shader">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="..\resources\tess_control.shader">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="..\resources\tess_evaluation.shader">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="..\resources\vertex.shader">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="..\resources\vertex_1.shader">
+      <Filter>resources</Filter>
     </None>
   </ItemGroup>
 </Project>

@@ -98,6 +98,12 @@
       <AdditionalLibraryDirectories>$(SolutionDir)Debug</AdditionalLibraryDirectories>
       <AdditionalDependencies>common.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>copy "$(SolutionDir)resources\*" "$(OutDir)\"</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Copy resources into runtime directory.</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -161,10 +167,18 @@
     <ClInclude Include="ch2\TessellationTriangle.h" />
     <ClInclude Include="ch2\UseGeometryShader.h" />
     <ClInclude Include="ch5\UsingBuffer.h" />
+    <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ch5\resources\fragment_1.shader" />
-    <None Include="ch5\resources\vertex_1.shader" />
+    <None Include="..\resources\fragment.shader" />
+    <None Include="..\resources\fragment_1.shader" />
+    <None Include="..\resources\fragment_constant_color.shader" />
+    <None Include="..\resources\fragment_position_color.shader" />
+    <None Include="..\resources\geometry.shader" />
+    <None Include="..\resources\tess_control.shader" />
+    <None Include="..\resources\tess_evaluation.shader" />
+    <None Include="..\resources\vertex.shader" />
+    <None Include="..\resources\vertex_1.shader" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
